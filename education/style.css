@@ -576,3 +576,127 @@ background: #161C35;
     font-weight: 600;
     line-height: 24px;
 }
+
+.contacts {
+    padding: 60px 0;
+}
+.contacts-block {
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1170px;
+}
+.map {
+    margin-top: 30px;
+}
+
+.subcribe {
+    height: 200px;
+    background: url(/src/bg.jpg) no-repeat fixed;
+    background-position: 50% -50px;
+    background-size: cover;
+    position: relative;
+}
+.subcribe::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(33, 42, 73, 0.6);
+    z-index: 1;
+}
+.subcribe-block {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1170px;
+}
+.form-title {
+    color: #00D5C3;
+    font-weight: 300;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+.form-title span {
+    color: white;
+    font-weight: 600;
+}
+.subcribe form {
+    display: flex;
+    justify-content: center;
+}
+.subcribe input[type="email"] {
+    background: transparent;
+    border: 1px solid #00D5C3;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    padding: 10px;
+    width: 450px;
+}
+.subcribe button {
+    background: #00D5C3;
+    border: 1px solid #8ed4cf;
+    color: #FFFFFF;
+    font-size: 22px;
+    width: 100px;
+    transition-duration: 0.3s;
+}
+.subcribe button:hover {
+    color: #8ed4cf;
+    background: white;
+}
+
+.footer {
+    padding: 60px 0;
+}
+.footer-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1170px;
+}
+.social-icon {
+    margin: 20px 0;
+}
+.social-icon a {
+    color: #161C35;
+    font-size: 16px;
+    margin: 10px;
+    text-decoration: none;
+    position: relative;
+    width: 20px;
+    text-align: center;
+    display: inline-block;
+    transition-duration: 0.3s;
+}
+.social-icon a::before {
+    content: '';
+    width: 25px;
+    height: 25px;
+    border: 1px solid #161C35;
+    transform: rotate(45deg);
+    position: absolute;
+    left: -3px;
+    top: -5px;
+    transition-duration: 0.3s;
+    z-index: -1;
+}
+.social-icon a:hover {
+    color: white;
+}
+.social-icon a:hover::before {
+    background: #161C35;
+}
+
